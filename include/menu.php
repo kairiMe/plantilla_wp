@@ -214,8 +214,8 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="mdi mdi-diamond-stone"></i><span>PRODUCTOS</span></a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="ui-cards.html">Panes</a></li>
-                        <li><a href="ui-cards.html">Pasteles</a></li>
+                        <li><a href="produc.php">Panes</a></li>
+                        <li><a href="produc1.php">Pasteles</a></li>
                     </ul>
                 </li>
 
