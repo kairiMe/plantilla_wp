@@ -10,12 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/images/favicon.ico">
 
     <!-- App css -->
-    <link href="platilla/Admin/vertical/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="platilla/Admin/vertical/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <link href="platilla/Admin/vertical/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?php bloginfo('template_url');?>/platilla/Admin/vertical/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -24,6 +24,7 @@
     <!-- Begin page -->
     <div id="layout-wrapper">
         <div class="header-border"></div>
+        <?PHP bloginfo('template_url');?>
 
         <?php include "include/menu.php" ?>
 
@@ -83,14 +84,14 @@
 
 
     <!-- jQuery  -->
-    <script src="platilla/Admin/vertical/assets/js/jquery.min.js"></script>
-    <script src="platilla/Admin/vertical/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="platilla/Admin/vertical/assets/js/metismenu.min.js"></script>
-    <script src="platilla/Admin/vertical/assets/js/waves.js"></script>
-    <script src="platilla/Admin/vertical/assets/js/simplebar.min.js"></script>
+    <script src="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/js/jquery.min.js"></script>
+    <script src="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/js/metismenu.min.js"></script>
+    <script src="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/js/waves.js"></script>
+    <script src="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/js/simplebar.min.js"></script>
 
     <!-- App js -->
-    <script src="assets/js/theme.js"></script>
+    <script src="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/js/theme.js"></script>
 
 </body>
 
