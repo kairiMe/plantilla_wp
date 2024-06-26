@@ -1,3 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Xeloro - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="MyraStudio" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="<?PHP bloginfo('template_url');?>/platilla/Admin/vertical/assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="<?php bloginfo('template_url');?>/plantilla/Admin/vertical/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?PHP bloginfo('template_url');?>/plantilla/Admin/vertical/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="<?PHP bloginfo('template_url');?>/plantilla/Admin/vertical/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css'>
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        <div class="header-border"></div>
+        
+
+
 <header id="page-topbar">
     <div class="navbar-header">
 
@@ -59,7 +90,7 @@
 
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="" src="plantilla/Admin/vertical/assets/images/flags/us.jpg" alt="Header Language" height="16">
+                    <img class="" src="<?PHP bloginfo('template_url');?>/plantilla/Admin/vertical/assets/images/flags/us.jpg" alt="Header Language" height="16">
                     <span class="d-none d-sm-inline-block ml-1">Ingles</span>
                     <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                 </button>
@@ -67,25 +98,25 @@
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <img src="plantilla/Admin/vertical/assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12">
+                        <img src="<?PHP bloginfo('template_url');?>/plantilla/Admin/vertical/assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12">
                         <span class="align-middle">Español</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <img src="plantilla/Admin/vertical/assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12">
+                        <img src="<?PHP bloginfo('template_url');?>/plantilla/Admin/vertical/assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12">
                         <span class="align-middle">Aleman</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <img src="plantilla/Admin/vertical/assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12">
+                        <img src="<?PHP bloginfo('template_url');?>/plantilla/Admin/vertical/assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12">
                         <span class="align-middle">Italiano</span>
                     </a>
 
                     <!-- item-->
                     <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <img src="plantilla/Admin/vertical/assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12">
+                        <img src="<?PHP bloginfo('template_url');?>/plantilla/Admin/vertical/assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12">
                         <span class="align-middle">Ruso</span>
                     </a>
                 </div>
@@ -201,14 +232,26 @@
             </a>
         </div>
 
-        <!--- Sidemenu -->
+        <?php
+        wp_nav_menu(
+            array(
+              'theme_location' => 'menu_izquierdo',
+              'container' => 'div',
+              'container_id' => 'sidebar-menu',
+              'items_wrap' => '<ul class="metismenu list-unstyled" id="side-menu">%3$s</ul>',
+              'link_before' => '<i class="fi fi-brands-itunes"></i>',
+            )
+          );
+        ?>
+
+        <!--- Sidemenu -
         <div id="sidebar-menu">
-            <!-- Left Menu Start -->
+           
             <ul class="metismenu list-unstyled" id="side-menu">
                 <li class="menu-title">Menu</li>
 
                 <li>
-                    <a href="index.html" class="waves-effect"><i class="mdi mdi-home-analytics"></i><span class="badge badge-pill badge-primary float-right">7</span><span>Dashboard</span></a>
+                    <a href="index.html" class="waves-effect"><i class="mdi mdi-home-analytics"></i><span>Dashboard</span></a>
                 </li>
 
                 <li>
@@ -232,7 +275,8 @@
                 </li>
             </ul>
         </div>
-        <!-- Sidebar -->
+        Sidebar -->
     </div>
 </div>
 <!-- Left Sidebar End -->
+ 
